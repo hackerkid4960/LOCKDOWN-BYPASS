@@ -29,7 +29,7 @@ export default function Checkout() {
           },
           onApprove: (data, actions) => {
             return actions.order.capture().then(function(details) {
-              window.location.href = '/download';
+              handlePayment();
             });
           }
         })
@@ -38,6 +38,12 @@ export default function Checkout() {
 
     document.body.appendChild(script);
   }, []);
+
+  const handlePayment = () => {
+    alert('Payment successful!');
+    // Redirect to download page
+    window.location.href = '/download';
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">

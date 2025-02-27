@@ -12,7 +12,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message received! (This is just a demo)');
+    alert('Message received!');
     setFormData({ name: '', email: '', issue: '' }); // Clear form
   };
 
