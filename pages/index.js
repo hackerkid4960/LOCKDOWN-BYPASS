@@ -1,4 +1,4 @@
-import { FiDownload, FiShield, FiLock, FiCheckCircle } from 'react-icons/fi';
+import { FiDownload, FiShield, FiLock, FiCheckCircle, FiShoppingCart } from 'react-icons/fi';
 import Link from 'next/link';
 
 export default function Home() {
@@ -62,10 +62,10 @@ export default function Home() {
 
           <div className="bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center mb-6 md:mb-12">
             <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">$49</div>
-            <Link href="/checkout"
-              className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg md:rounded-xl text-lg md:text-xl font-semibold hover:bg-green-700 transition-colors w-full md:w-auto">
-              <FiDownload />
-              Buy Now
+            <Link href="/checkout" 
+              className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition flex items-center justify-center gap-2">
+              <FiShoppingCart />
+              Buy Now - $49
             </Link>
           </div>
 
