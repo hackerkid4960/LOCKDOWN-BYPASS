@@ -1,13 +1,15 @@
 import { FiUsers, FiAward, FiTarget } from 'react-icons/fi';
 import { HiLightBulb, HiGlobe } from 'react-icons/hi';
+import { IoArrowBack } from 'react-icons/io5';
 import Link from 'next/link';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
       <div className="container mx-auto px-4 py-12">
-        <Link href="/" className="text-white flex items-center mb-8 hover:text-blue-400">
-          <FiArrowLeft className="mr-2" /> Back to Home
+        <Link href="/" 
+          className="inline-flex items-center text-green-600 hover:text-green-700 mb-8">
+          <IoArrowBack className="mr-2" /> Back to Home
         </Link>
 
         <div className="text-center mb-16">
